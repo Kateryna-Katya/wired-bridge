@@ -1,56 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/test-two/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/test-two/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/test-two/assets/styles-guStct1H.css">
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wired Bridge | Карьерный апгрейд и стратегии роста</title>
+  <meta name="description"
+    content="Инновационная платформа для построения карьеры. Консультации, стратегии и AI-инструменты для профессионального роста.">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Unbounded:wght@400;600;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" crossorigin src="/wired-bridge/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/wired-bridge/assets/styles-MN_w4xMc.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="header__container">
+    <a href="#" class="header__logo">
+      WIRED<span class="text-accent">BRIDGE</span>
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item"><a href="#" class="header__link">Главная</a></li>
+        <li class="header__item"><a href="#platform" class="header__link">Платформа</a></li>
+        <li class="header__item"><a href="#benefits" class="header__link">Возможности</a></li>
+        <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+        <li class="header__item"><a href="#faq" class="header__link">FAQ</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--small">Контакты</a>
+      <button class="header__burger" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main">
       <!-- Loads the specified .html file -->
       
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="footer__container">
+    <div class="footer__col footer__col--brand">
+      <a href="#" class="footer__logo">WIRED<span class="text-accent">.INK</span></a>
+      <p class="footer__desc">
+        Технологии нового поколения для вашей карьеры.
+        Переосмыслите подход к развитию с нами.
+      </p>
+      <div class="footer__socials">
+        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+        <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Навигация</h3>
+      <ul class="footer__list">
+        <li><a href="#" class="footer__link">Главная</a></li>
+        <li><a href="#platform" class="footer__link">О платформе</a></li>
+        <li><a href="#benefits" class="footer__link">Преимущества</a></li>
+        <li><a href="#blog" class="footer__link">Блог</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Информация</h3>
+      <ul class="footer__list">
+        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+        <li><a href="cookies.html" class="footer__link">Cookie Policy</a></li>
+        <li><a href="terms.html" class="footer__link">Terms of Use</a></li>
+        <li><a href="return.html" class="footer__link">Return Policy</a></li>
+        <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+        <li><a href="personal-data-policy.html" class="footer__link">Personal Data</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Контакты</h3>
+      <ul class="footer__contacts">
+        <li class="contact-item">
+          <i data-lucide="map-pin" class="contact-icon"></i>
+          <span>Landsberger Allee 117, 10407 Berlin, Germany</span>
+        </li>
+        <li class="contact-item">
+          <i data-lucide="phone" class="contact-icon"></i>
+          <a href="tel:+493012345678">+49 30 1234 5678</a>
+        </li>
+        <li class="contact-item">
+          <i data-lucide="mail" class="contact-icon"></i>
+          <a href="mailto:hello@wired-bridge.ink">hello@wired-bridge.ink</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <p>&copy; 2025 Wired Bridge. Все права защищены. Предложение активно только в странах ЕС.</p>
+    </div>
   </div>
 </footer>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
